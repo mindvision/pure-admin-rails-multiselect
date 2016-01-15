@@ -1,0 +1,83 @@
+/*
+ * NOTE: Sprockets automatically searches any immediate descendant of the vendor/assets folder
+ * (eg: vendor/assets/*) so we simply need to require the JS file within the package.
+ *
+ *= require css/multi-select
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+$highlight-color: #4a9fc8;
+
+.ms-container {
+  width: 100%;
+  background-color: transparent;
+  background-image: image-url('pure_admin/inputs/multiselect/arrow-left-right.png');
+  background-repeat: no-repeat;
+  background-size: 6% auto;
+  background-position: center;
+  position: relative;
+
+  .ms-list {
+    background: white;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    border-top: 0;
+    overflow-y: scroll;
+    box-shadow: none;
+    transition: none;
+
+    &.ms-focus {
+      border-color: transparent;
+      outline: 1px solid ;
+      outline-color: $highlight-color;
+      box-shadow: none;
+    }
+
+  }
+
+  .ms-selectable,
+  .ms-selection {
+    background: none;
+
+    li.ms-elem-selectable,
+    li.ms-elem-selection {
+      cursor: pointer;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      padding: 0.3em 0.6em;
+
+      &.ms-hover {
+        background-color: $highlight-color;
+      }
+    }
+  }
+}
+
+.pure-admin-multiselect-filter-input {
+  width: 100%;
+}
+
+.pure-admin-multiselect-header {
+  color: #888;
+  margin-bottom: 0.25em;
+  font-style: italic;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pure-admin-multiselect-footer .pure-button {
+  border-top: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pure-form-aligned .pure-control-group.multiselect label:not(.addon-label) {
+  line-height: normal;
+}
