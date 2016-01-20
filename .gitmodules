@@ -1,0 +1,6 @@
+[submodule "vendor/assets/quicksearch"]
+	path = vendor/assets/quicksearch
+	url = https://github.com/riklomas/quicksearch
+[submodule "vendor/assets/multi-select"]
+	path = vendor/assets/multi-select
+	url = https://github.com/lou/multi-select
