@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = 'pure-admin-rails-multiselect'
   s.version     = PureAdmin::Rails::Multiselect::VERSION
   s.authors     = ['Tobyn Dockerill']
-  s.email       = ['tobyn@mindvision.com.au']
+  s.email       = ['staff@mindvision.com.au']
   s.homepage    = ''
   s.summary     = 'A multiselect input using multiselect.js and quicksearch.js'
   s.license     = 'MIT'
